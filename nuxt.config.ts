@@ -9,6 +9,12 @@ export default defineNuxtConfig({
       { code: "ja", language: "ja-JP", file: "ja.json" },
     ],
     defaultLocale: "ja",
+    strategy: "no_prefix",
+    detectBrowserLanguage: {
+      useCookie: true,
+      alwaysRedirect: false,
+      fallbackLocale: "ja",
+    },
   },
   nitro: {
     preset: "cloudflare_module",
