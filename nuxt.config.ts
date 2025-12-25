@@ -4,11 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ["@nuxtjs/i18n"],
   i18n: {
-    defaultLocale: "en",
     locales: [
-      { code: "en", name: "English", file: "en.json" },
-      { code: "nl", name: "Nederlands", file: "nl.json" },
+      { code: "en", language: "en-US", file: "en.json" },
+      { code: "ja", language: "ja-JP", file: "ja.json" },
     ],
+    defaultLocale: "ja",
   },
   nitro: {
     preset: "cloudflare_module",
